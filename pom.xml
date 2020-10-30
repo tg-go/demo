@@ -10,7 +10,33 @@
     <version>1.0.0</version>
     <modules>
         <module>redis-demo</module>
+        <module>ionio-demo</module>
     </modules>
+
+    <properties>
+        <guava.version>29.0-jre</guava.version>
+        <jedis.version>3.3.0</jedis.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
 
 
 </project>
