@@ -11,6 +11,7 @@
     <modules>
         <module>redis-demo</module>
         <module>ionio-demo</module>
+        <module>algo-demo</module>
     </modules>
 
     <properties>
