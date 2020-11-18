@@ -12,6 +12,8 @@
         <module>redis-demo</module>
         <module>ionio-demo</module>
         <module>algo-demo</module>
+        <module>zk-demo</module>
+        <module>kafka-demo</module>
         <module>sina-demo</module>
         <module>test-demo</module>
     </modules>
@@ -35,6 +37,12 @@
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>3.5.8</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
