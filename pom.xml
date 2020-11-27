@@ -17,6 +17,8 @@
         <module>sina-demo</module>
         <module>test-demo</module>
         <module>base-demo</module>
+        <module>mybatis-demo</module>
+        <module>java-demo</module>
     </modules>
 
     <properties>
@@ -89,6 +91,19 @@
                 <version>1.8.2</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>3.5.6</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.16</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
