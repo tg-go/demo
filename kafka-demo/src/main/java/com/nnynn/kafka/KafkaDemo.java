@@ -28,13 +28,13 @@ public class KafkaDemo {
     @Before
     public void createProducer() {
         Properties properties = new Properties();
-        properties.put("bootstrap.servers", "localhost:9092");
+        properties.put("bootstrap.servers", "42.192.221.34:9092");
         properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         producer = new KafkaProducer<String, String>(properties);
 
         Properties consumerProp = new Properties();
-        consumerProp.put("bootstrap.servers", "localhost:9092");
+        consumerProp.put("bootstrap.servers", "42.192.221.34:9092");
         consumerProp.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         consumerProp.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         // 消费者比较生产者增加了groupId（消费组的概念）

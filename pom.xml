@@ -21,6 +21,7 @@
         <module>java-demo</module>
         <module>spring-demo</module>
         <module>MySpring-demo</module>
+        <module>jmx-demo</module>
     </modules>
 
     <properties>
