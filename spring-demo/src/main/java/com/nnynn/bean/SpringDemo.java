@@ -13,6 +13,7 @@ public class SpringDemo {
 
     public static void main(String[] args) {
         XmlBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("spring.xml"));
+        //XmlWebApplicationContext context = new XmlWebApplicationContext(new ClassPathResource("spring.xml"));
         Student student= beanFactory.getBean(Student.class);
         ApplicationContext applicationContext = new XmlWebApplicationContext();
         applicationContext.getBean("aa");
