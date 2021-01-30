@@ -1,5 +1,9 @@
 package aimat;
 
+import org.junit.Test;
+
+import java.util.Arrays;
+
 /**
  * @author bo.luo
  * @date 2021/1/28 11:45
@@ -27,5 +31,17 @@ public class Solution029 {
             }
         }
         return result;
+    }
+
+
+    @Test
+    public void test1() {
+        String str = "a|b|c|||";
+        String[] r1 = str.split("\\|", 6);
+        System.out.println(Arrays.toString(r1));
+        String[] r2 = str.split("\\|",-1);
+        System.out.println(Arrays.toString(r2));
+        String[] r3 = str.split("\\|");
+        System.out.println(Arrays.toString(r3));
     }
 }

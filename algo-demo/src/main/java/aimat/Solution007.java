@@ -50,7 +50,8 @@ public class Solution007 {
         } else if (preStart == preEnd) {
             return new TreeNode(preorder[preStart]);
         } else {
-            int rootIndex = (int) indexMap.get(preorder[preStart]);
+            //int rootIndex = (int) indexMap.get(preorder[preStart]);
+            int rootIndex = 1;
             int leftNodes = rootIndex - inStart;
             int rightNodes = inEnd - rootIndex;
             TreeNode leftNode = buildTree(preorder, preStart + 1, preStart + leftNodes, inorder, inStart, rootIndex - 1, indexMap);
